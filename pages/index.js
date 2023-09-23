@@ -11,10 +11,10 @@ import logo from '../public/nm-logo.png';
 export default function Home() {
   return (
     <main className="flex md:min-h-screen flex-col items-center justify-center overflow-hidden">
-      <span className="absolute left-8 top-[25rem] md:left-52 md:top-[9rem] text-sm font-bdsans text-black brightness-100 underline underline-offset-4">
+      <span className="absolute left-8 top-[25.75rem] md:left-52 md:top-[9rem] text-sm font-bdsans text-black brightness-100 underline underline-offset-4">
         Upcoming Shows
       </span>
-      <div className="absolute top-[54%] md:top-[12rem] md:left-10 lg:left-14 flex items-start gap-6">
+      <div className="absolute top-[30rem] md:top-[12rem] md:left-10 lg:left-14 flex items-start gap-6">
         <Timeline
           items={[
             {
