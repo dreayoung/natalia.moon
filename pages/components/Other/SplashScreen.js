@@ -43,7 +43,8 @@ const shapeVariations = {
     },
   },
 };
-export const SplashScreen = () => {
+
+export default function SplashScreen() {
   return (
     <>
       <div className="flex min-h-screen items-center justify-center transform ease-in-out">
@@ -637,4 +638,4 @@ c26 0 76 -8 112 -17 l65 -17 -2 -45 c-4 -77 -71 -197 -153 -273 -39 -36 -70
       </div>
     </>
   );
-};
+}
