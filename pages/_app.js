@@ -3,7 +3,7 @@ import 'tw-elements/dist/css/tw-elements.min.css';
 
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { SplashScreen } from './components/Other/SplashScreen';
+import SplashScreen from './components/Other/SplashScreen';
 import Navbar from './components/Essentials/Navbar';
 
 export default function App({ Component, pageProps }) {
