@@ -30,15 +30,18 @@ export default function Navbar() {
       </div>
 
       <Modal
-        title={<h1 className="font-brstd text-2xl text-bbrown">Explore</h1>}
         open={isModalOpen}
         onCancel={handleCancel}
-        footer={null}
+        footer={
+          <div className="py-3 text-center">
+            <span>does this site spark your interest? book with me today!</span>
+          </div>
+        }
       >
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#fff7dcff]/40 to-transparent font-bdsans text-lg gap-5 py-14 border-t-[1px] rounded-t-full mx-4 border-x-[1px] border-[#fff7dcff]">
-          <p>gallery</p>
-          <p>about</p>
-          <p>contact</p>
+        <div className="flex flex-col items-center justify-center font-bold bg-gradient-to-b from-[#fff7dcff]/40 to-transparent font-bdsans text-lg gap-5 py-14 border-t-[1px] rounded-t-full mx-4 border-x-[1px] border-[#fff7dcff]">
+          <p>Gallery</p>
+          <p>About</p>
+          <p>Contact</p>
         </div>
       </Modal>
 
