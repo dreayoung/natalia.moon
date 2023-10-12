@@ -71,7 +71,7 @@ export default function About() {
           <ConfigProvider
             theme={{
               token: {
-                fontSize: 13,
+                fontSize: 14,
               },
             }}
           >
@@ -80,13 +80,13 @@ export default function About() {
                 <p>
                   &quot;Masterful performance &amp;lasting impression!&quot;
                 </p>
-                <span className="italic">- Vogue</span>
+                <span className="italic hidden md:block">- Vogue</span>
               </div>
               <div className="text-bbrown font-bdsans">
                 <p>
                   &quot;The passion is shown and felt through every step.&quot;
                 </p>
-                <span className="italic">- Time</span>
+                <span className="italic hidden md:block">- Time</span>
               </div>
               <div className="text-bbrown font-bdsans">
                 <p>&quot;Story telling expressive movements.&quot;</p>
