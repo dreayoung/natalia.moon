@@ -64,7 +64,7 @@ const data = [
 export default function About() {
   return (
     <main className="">
-      <div className="relative flex flex-col md:flex-row lg:w-[70%] xl:w-[75%] border-t-bbrown/10 border-t-[1px] md:border-l-[1px] md:border-b-[1px] md:border-b-bbrown/10 md:border-l-bbrown/10 items-center rounded-full gap-4 mb-28 py-10 md:mx-14 md:pl-14 lg:pl-20 lg:ml-20 xl:ml-32 ">
+      <div className="relative flex flex-col md:flex-row w-full lg:w-[70%] xl:w-[75%] border-t-bbrown/10 border-t-[1px] md:border-l-[1px] md:border-b-[1px] md:border-b-bbrown/10 md:border-l-bbrown/10 items-center rounded-full gap-4 mb-28 py-10 md:mx-14 md:pl-14 lg:pl-20 lg:ml-20 xl:ml-32 ">
         <Image src={ball22} alt="first image" className="w-52 md:w-full" />
 
         <div className="font-bdsans text-bbrown mx-8">
@@ -122,7 +122,7 @@ export default function About() {
 
           <hr className="border-t-bbrown/10 mt-3 w-1/2" />
 
-          <div className="w-64 md:w-72 mt-3 grid grid-cols-4 place-items-center gap-8">
+          <div className="w-64 md:w-72 mt-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-8">
             <Image src={vg} alt="first image" />
             <Image src={time} alt="first image" />
             <Image src={india} alt="first image" />
