@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { List } from 'antd';
 
+import medal from '../../../public/medal.png';
+
 const data = [
   {
     title: 'The Prix de Lausanne',
@@ -58,7 +60,7 @@ export default function Awards() {
             <List.Item.Meta
               avatar={<Image src={medal} alt="medals" className="w-10" />}
               title={
-                <div className="font-bdsans font-black text-xs md:text-xl text-bbrown">
+                <div className="font-bdsans font-black text-sm md:text-xl text-bbrown">
                   {item.title}
                 </div>
               }
