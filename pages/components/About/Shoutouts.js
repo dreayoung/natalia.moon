@@ -15,62 +15,44 @@ import moon from '../../../public/logo-moon.png';
 
 export default function Shoutouts() {
   return (
-    <div className="xs:bg-gradient-to-b lg:bg-gradient-to-tr from-[#fff7dcff]/40 to-transparent xs:border-x-0 xs:border-t-2 xs:border-t-[#fff7dcff] md:border-y-0 border-l-2 border-l-[#fff7dcff] md:border-r-2 md:border-r-[#fff7dcff] lg:border-r-0 gap-6 flex flex-col items-center justify-center lg:flex-row  md:w-[90%] xl:w-[75%] rounded-full pt-6 pb-10  lg:pl-0 m-auto">
-      <div className="relative flex flex-col w-60 lg:w-72">
+    <div className="xs:bg-gradient-to-b lg:bg-gradient-to-tr from-[#fff7dcff]/40 to-transparent xs:border-x-0 xs:border-t-2 xs:border-t-[#fff7dcff] md:border-y-0 border-l-2 border-l-[#fff7dcff] md:border-r-2 md:border-r-[#fff7dcff] lg:border-r-0 lg:-space-x-7 flex flex-col items-center justify-center lg:flex-row md:w-[80%] xl:w-[75%] rounded-full pt-6 pb-10 m-auto">
+      <div className="relative flex flex-col w-40 m-auto xs:my-6 lg:my-0">
         <Image src={moon} alt="moon logo" className="animate-spin-slow" />
-        <Image src={ball22} alt="n.m" className=" absolute" />
+        <Image src={ball22} alt="n.m" className="-top-6 absolute" />
       </div>
-      <div className="font-bdsans text-bbrown xs:w-[90%] lg:w-[60%] xs:px-12 md:px-24 lg:px-0 mx-auto">
-        <p className="text-xs hidden lg:block">Featured in</p>
+      <div className="font-bdsans text-bbrown xs:w-[90%] lg:w-[70%] xs:px-12 md:px-24 lg:px-0 mx-auto">
+        <p className="text-xs ">⭑⭑⭑⭑</p>
         <Carousel dotPosition="right" dots={false} effect="fade" autoplay>
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
             <p className="">
               &quot;Masterful performance &amp; lasting impression!&quot;
             </p>
-            <span className="italic">- Vogue</span>
           </div>
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
             <p className="">
               &quot;The passion is felt through every step.&quot;
             </p>
-            <span className="italic">- Time</span>
           </div>
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
-            <p className="">&quot;Story telling expressive movements.&quot;</p>
-            <span className="italic">- Inida Today</span>
-          </div>
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
             <p className="">
-              &quot;The performance left the audience spellbound.&quot;
+              &quot;Wow! &amp; again the audience is spellbound.&quot;
             </p>
-            <span className="italic">- Outlook</span>
           </div>
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
-            <p className="">
-              &quot;It is always a pleasure to see you live&quot;
-            </p>
-            <span className="italic text-bbrown">- Wonder</span>
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
+            <p className="">&quot;Soooooo ready for the next show!&quot;</p>
           </div>
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
             <p className="">
-              &quot;cant wait to see you again! you the goat&quot;
+              &quot;YOU ARE THE GOAT!!!! BRAVO. BRAVO. BRAVO&quot;
             </p>
-            <span className="italic">- Film Fare</span>
           </div>
 
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
-            <p className="">
-              &quot;Beautifully amazing! without a doubt.&quot;
-            </p>
-            <span className="italic">- The Ballet Herald</span>
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
+            <p className="">&quot;Beautiful &amp; Amazing! +more, without a doubt.&quot;</p>
           </div>
 
-          <div className="text-bbrown font-bdsans tracking-wide py-3 xs:text-left md:text-center lg:text-left">
-            <p className="">
-              {' '}
-              &quot;we love you! encore! encore! such beauty!&quot;
-            </p>
-            <span className="italic">- Forbes India</span>
+          <div className="text-[#6e664a] text-xs md:text-sm font-bdsans font-semibold tracking-wide py-2 xs:text-left md:text-center lg:text-left">
+            <p className=""> &quot;we love youuu! encore! encore! encore!&quot;</p>
           </div>
         </Carousel>
 

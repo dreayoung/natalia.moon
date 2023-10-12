@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { List } from 'antd';
 
-import medal from '../../../public/medal.png';
+import medal from '../../../public/ribbon.png';
+import { StarTwoTone } from '@ant-design/icons';
 
 const data = [
   {
@@ -58,9 +59,9 @@ export default function Awards() {
         renderItem={(item, index) => (
           <List.Item>
             <List.Item.Meta
-              avatar={<Image src={medal} alt="medals" className="w-10" />}
+              avatar={<StarTwoTone twoToneColor="#6e664a" />}
               title={
-                <div className="font-bdsans font-black text-sm md:text-xl text-bbrown">
+                <div className="font-bdsans font-black text-xs md:text-sm text-bbrown">
                   {item.title}
                 </div>
               }

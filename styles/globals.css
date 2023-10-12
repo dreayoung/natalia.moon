@@ -7,7 +7,6 @@
     font-family: 'BRSonoma';
     src: url('/fonts/BRSonoma-Bold.woff2') format('woff');
     font-display: swap;
-    font-style: bold;
   }
 
   @font-face {
@@ -20,7 +19,6 @@
     font-family: 'BrStd';
     src: url('/fonts/Brush-Script-Std-Medium.woff2') format('woff');
     font-display: swap;
-    font-style: bold;
   }
 }
 

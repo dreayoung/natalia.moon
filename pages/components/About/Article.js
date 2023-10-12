@@ -3,7 +3,7 @@ import Awards from './Awards';
 
 export default function Article() {
   return (
-    <div className="flex relative text-xs md:text-sm my-16 mx-8 md:mx-14 lg:ml-20 lg:w-[70%] pb-4 rounded-2xl gap-5 flex-col text-left justify-center  text-bbrown font-bdsans">
+    <div className="flex relative font-black text-xs md:text-sm my-16 mx-8 md:mx-14 lg:ml-32 lg:w-[75%] pb-4 rounded-2xl gap-5 flex-col text-left justify-center  text-bbrown font-bdsans">
       <p className="font-brstd text-7xl text-bbrown/5 absolute -left-10 -top-8">
         About
       </p>
