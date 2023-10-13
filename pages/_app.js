@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import SplashScreen from './components/Other/SplashScreen';
 import Navbar from './components/Essentials/Navbar';
 import Footer from './components/Essentials/Footer';
+import SideNav from './components/Navigation/SideNav';
 
 export default function App({ Component, pageProps }) {
   // const pathname = usePathname();
@@ -22,7 +23,10 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Navbar />
-      <Component {...pageProps} />
+      <SideNav />
+      <main className="pt-40 md:pt-52">
+        <Component {...pageProps} />
+      </main>
       <Footer />
     </>
   );
