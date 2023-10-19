@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Navbar />
       <SideNav />
-      <main className="pt-40 md:pt-52">
+      <main className="pt-40">
         <Component {...pageProps} />
       </main>
       <Footer />
