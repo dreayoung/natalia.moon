@@ -18,7 +18,7 @@ export default function Navbar() {
   const router = useRouter();
   // bg-[#f1eeea]
   return (
-    <nav className="bg-[#f1eeea] flex items-center xs:w-full lg:w-[90%] text-center pt-6 md:pt-10 m-auto text-bbrown">
+    <nav className="bg-[#f1eeea] flex items-center xs:w-full lg:w-[90%] text-center pt-10 m-auto text-bbrown">
       <hr className="border-bbrown/20 w-20 border-[1px]" />
       <div
         onClick={() => router.push('/')}
@@ -56,12 +56,12 @@ export default function Navbar() {
             </div>
           }
         >
-          <div className="flex flex-col items-center justify-center font-bold bg-gradient-to-b from-[#fff7dcff]/40 to-transparent font-bdsans text-lg gap-5 py-14 border-t-[1px] rounded-t-full m-4 border-x-[1px] border-[#fff7dcff]">
+          <div className="flex flex-col items-center justify-center text-xs font-bold bg-gradient-to-b from-[#fff7dcff]/40 to-transparent font-bdsans gap-5 py-14 border-t-[1px] rounded-t-full m-4 border-x-[1px] border-[#fff7dcff]">
             <div
-              onClick={() => (router.push('/gallery'), handleCancel())}
+              onClick={() => (router.push('/about'), handleCancel())}
               className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
-              Gallery
+              About
             </div>
             <div
               onClick={() => (router.push('/contact'), handleCancel())}
@@ -70,12 +70,12 @@ export default function Navbar() {
               Upcoming Shows
             </div>
             <div
-              onClick={() => (router.push('/about'), handleCancel())}
+              onClick={() => (router.push('/gallery'), handleCancel())}
               className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
-              About
+              Gallery
             </div>
-            <div className="flex items-center gap-4 justify-between rounded-3xl bg-bbrown/20 py-3 px-5 font-bdsans text-bbrown text-xs cursor-pointer transition-all duration-300 hover:ring-4 ring-2 ring-bbrown/40">
+            <div className="flex items-center gap-4 justify-between rounded-3xl bg-bbrown/20 py-3 px-5 font-bdsans text-bbrown hover:cursor-pointer transition-all duration-300 hover:ring-4 ring-2 ring-bbrown/40">
               Send a message
               <SendOutlined />
             </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
               onClick={() => (router.push('/about'), handleCancel())}
               className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
-             How to Use
+              How to Use
             </div>
           </div>
         </Modal>
