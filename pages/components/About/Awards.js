@@ -49,7 +49,7 @@ const data = [
 
 export default function Awards() {
   return (
-    <div className="md:my-20">
+    <div className="my-20">
       <div className="font-brstd text-6xl md:text-7xl pt-6 text-bbrown/10 md:whitespace-nowrap">
         Awards &amp; Achievements
       </div>

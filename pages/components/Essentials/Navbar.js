@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Modal, ConfigProvider } from 'antd';
-import { EllipsisOutlined } from '@ant-design/icons';
+import { EllipsisOutlined, SendOutlined } from '@ant-design/icons';
 
 import { useRouter } from 'next/router';
 
@@ -16,15 +16,24 @@ export default function Navbar() {
   };
 
   const router = useRouter();
-
+  // bg-[#f1eeea]
   return (
-    <nav className="fixed bg-[#f1eeea] flex items-center justify-center xs:w-full lg:w-[90%] -translate-x-1/2 left-1/2 text-center pt-10 z-50 pb-[2rem] text-bbrown border-b-[1px] border-b-bbrown/20">
+    <nav className="bg-[#f1eeea] flex items-center xs:w-full lg:w-[90%] text-center pt-6 md:pt-10 m-auto text-bbrown">
+      <hr className="border-bbrown/20 w-20 border-[1px]" />
+      <div
+        onClick={() => router.push('/')}
+        className="text-2xl whitespace-nowrap font-brstd px-2 rounded-full hover:cursor-pointer"
+      >
+        Natalia Moon
+      </div>
+      <hr className="border-bbrown/20 border-[1px] w-full" />
       <div
         onClick={showModal}
-        className="absolute hover:cursor-pointer -bottom-6 flex bg-[#f1eeea] border-[1px] border-bbrown/20 rounded-full p-4 right-4 sm:px-6 sm:right-12 lg:hidden rounded-b-3xl font-bdsans z-50"
+        className="hover:cursor-pointer flex bg-[#f1eeea] border-[1px] border-bbrown/20 rounded-full p-4 sm:px-6 lg:hidden rounded-b-3xl"
       >
         <EllipsisOutlined />
       </div>
+      <hr className="lg:hidden block border-bbrown/20 border-[1px] w-12" />
 
       <ConfigProvider
         theme={{
@@ -50,32 +59,35 @@ export default function Navbar() {
           <div className="flex flex-col items-center justify-center font-bold bg-gradient-to-b from-[#fff7dcff]/40 to-transparent font-bdsans text-lg gap-5 py-14 border-t-[1px] rounded-t-full m-4 border-x-[1px] border-[#fff7dcff]">
             <div
               onClick={() => (router.push('/gallery'), handleCancel())}
-              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1"
+              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
               Gallery
             </div>
             <div
+              onClick={() => (router.push('/contact'), handleCancel())}
+              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
+            >
+              Upcoming Shows
+            </div>
+            <div
               onClick={() => (router.push('/about'), handleCancel())}
-              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1"
+              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
               About
             </div>
+            <div className="flex items-center gap-4 justify-between rounded-3xl bg-bbrown/20 py-3 px-5 font-bdsans text-bbrown text-xs cursor-pointer transition-all duration-300 hover:ring-4 ring-2 ring-bbrown/40">
+              Send a message
+              <SendOutlined />
+            </div>
             <div
-              onClick={() => (router.push('/contact'), handleCancel())}
-              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1"
+              onClick={() => (router.push('/about'), handleCancel())}
+              className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
-              Contact
+             How to Use
             </div>
           </div>
         </Modal>
       </ConfigProvider>
-
-      <div
-        onClick={() => router.push('/')}
-        className="text-4xl whitespace-nowrap font-brstd absolute -translate-x-1/2 left-1/2 xs:top-14 top-10 px-4 rounded-full bg-[#f1eeea] hover:cursor-pointer"
-      >
-        Natalia Moon
-      </div>
     </nav>
   );
 }
