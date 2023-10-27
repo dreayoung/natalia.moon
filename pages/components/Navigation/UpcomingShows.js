@@ -31,7 +31,7 @@ export default function UpcomingShows() {
           </Card>
         </Col>
       </Row>
-      <div className="my-10">
+      <div className="mx-4 my-10">
         <div className="font-bdsans flex flex-col md:flex-row md:items-end xs:items-start justify-between text-xs pb-4">
           <div className="font-black text-3xl leading-10">Upcoming Shows</div>
           <span className="text-gray-400">having trouble?</span>
