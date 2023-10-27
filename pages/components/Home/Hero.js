@@ -6,11 +6,15 @@ export default function Hero() {
   const router = useRouter();
   return (
     <>
-      <div className="flex flex-row-reverse items-center justify-center gap-3 mt-14 lg:mt-0 mb-8 lg:mb-12 md:mr-20">
-        <div className="flex items-center justify-between rounded-3xl w-60 bg-bbrown/20 py-3 px-5 font-bdsans font-black text-bbrown text-xs cursor-pointer transition-all duration-300 hover:ring-4 ring-2 ring-bbrown/40">
+      <div className="flex flex-row-reverse items-center justify-center gap-3 mt-32 lg:mt-0 mb-8 lg:mb-12 md:mr-20">
+        <Link
+          href="https://www.createdbydwe.tech"
+          target="_blank"
+          className="flex items-center justify-between rounded-3xl w-60 bg-bbrown/20 py-3 px-5 font-bdsans text-bbrown text-xs cursor-pointer transition-all duration-300 hover:ring-4 ring-2 ring-bbrown/40"
+        >
           Send a message
           <SendOutlined />
-        </div>
+        </Link>
         <div
           onClick={() => router.push('/shows')}
           className="hidden lg:block rounded-3xl bg-bbrown/20 py-3 px-5 font-bdsans text-bbrown transition-all duration-300 hover:ring-4 ring-2 ring-bbrown/40 text-xs cursor-pointer"
@@ -26,7 +30,7 @@ export default function Hero() {
           <InstagramOutlined twoToneColor="pink" />
         </Link>
       </div>
-      <div className="min-h-screen lg:mr-52 xs:mx-4 md:mx-10 lg:ml-20 p-24 rounded-[3rem] font-bdsans text-white bg-[url('/bgvid.gif')] bg-cover bg-center">
+      <div className="min-h-screen lg:mr-52 xs:mx-4 xs:m-auto md:mx-10 lg:ml-20 pt-24 lg:px-60 rounded-[3rem] font-bdsans text-white bg-[url('/bgvid.gif')] bg-cover bg-center">
         <div className="text-center hidden lg:block text-xs">
           Welcome to the enchanting world of dance, where grace, passion, and
           dedication come together in the life story of a remarkable ballerina.
@@ -35,4 +39,3 @@ export default function Hero() {
     </>
   );
 }
-

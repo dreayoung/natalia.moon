@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#f1eeea] flex items-center justify-center xs:w-full lg:w-[90%] text-center pt-10 m-auto text-bbrown">
+    <nav className="bg-[#f1eeea] xs:shadow-sm lg:shadow-none flex items-center justify-center xs:w-full lg:w-[90%] text-center pt-5 m-auto text-bbrown">
       <div
         className={`font-bdsans absolute transform -translate-x-1/2 left-1/2 xs:text-xs md:text-sm top-28 text-black w-[80vw] ${
           pathname == '/' || pathname == '/404' ? 'lg:hidden' : null
@@ -42,13 +42,13 @@ export default function Navbar() {
       <Image
         src={logo}
         alt="logo"
-        className="hidden lg:block w-32 mb-10 lg:mb-0"
+        className="hidden lg:block w-32"
         onClick={() => router.push('/')}
       />
 
       <hr className="border-bbrown/20 border-[0.85px] w-full hidden lg:block" />
 
-      <div className="lg:hidden flex items-center justify-between w-full mb-20 mx-8">
+      <div className="lg:hidden flex items-center justify-between w-full mb-4 mx-8">
         {/* mobile */}
         <Image
           src={logo}
