@@ -103,13 +103,13 @@ export default function Navbar() {
               About
             </div>
             <div
-              onClick={() => (router.push('/contact'), handleCancel())}
+              onClick={() => (router.push('/shows'), handleCancel())}
               className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
               Tour Dates
             </div>
             <div
-              onClick={() => (router.push('/gallery'), handleCancel())}
+              onClick={() => (router.push('/contact'), handleCancel())}
               className="rounded-3xl hover:bg-bbrown/5 hover:backdrop-blur-md px-6 py-1 hover:cursor-pointer"
             >
               Contact
