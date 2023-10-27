@@ -15,7 +15,7 @@ import moon from '../../../public/logo-moon.png';
 
 export default function Shoutouts() {
   return (
-    <div className="xs:bg-gradient-to-b lg:bg-gradient-to-tr from-[#fff7dcff]/40 to-transparent xs:border-x-0 xs:border-t-2 xs:border-t-[#fff7dcff] md:border-y-0 border-l-2 border-l-[#fff7dcff] md:border-r-2 md:border-r-[#fff7dcff] lg:border-r-0 lg:-space-x-7 flex flex-col items-center justify-center lg:flex-row md:w-[80%] xl:w-[75%] rounded-full pt-6 pb-10 m-auto">
+    <div className="mb-8 xs:bg-gradient-to-b lg:bg-gradient-to-tr from-[#fff7dcff]/40 to-transparent xs:border-x-0 xs:border-t-2 xs:border-t-[#fff7dcff] md:border-y-0 border-l-2 border-l-[#fff7dcff] md:border-r-2 md:border-r-[#fff7dcff] lg:border-r-0 lg:-space-x-7 flex flex-col items-center justify-center lg:flex-row md:w-[80%] xl:w-[75%] rounded-full pt-6 pb-10 m-auto">
       <div className="relative flex flex-col w-40 m-auto xs:my-6 lg:my-0">
         <Image src={moon} alt="moon logo" className="animate-spin-slow" />
         <Image src={ball22} alt="n.m" className="-top-6 absolute" />

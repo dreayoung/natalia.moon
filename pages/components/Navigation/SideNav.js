@@ -9,19 +9,19 @@ export default function SideNav() {
       <span className="text-xs underline underline-offset-4">Menu</span>
       <Link
         href="/about"
-        className="rounded-3xl hover:bg-bbrown/20 hover:backdrop-blur-md px-6 py-1"
+        className="rounded-3xl hover:bg-bbrown/10 hover:backdrop-blur-md px-6 py-1"
       >
         About
       </Link>
       <Link
         href="/contact"
-        className="rounded-3xl hover:bg-bbrown/20 hover:backdrop-blur-md px-6 py-1"
+        className="rounded-3xl hover:bg-bbrown/10 hover:backdrop-blur-md px-6 py-1"
       >
         Contact
       </Link>
       <Link
-        href="/gallery"
-        className="rounded-3xl hover:bg-bbrown/20 hover:backdrop-blur-md px-6 py-1"
+        href="/shows"
+        className="rounded-3xl hover:bg-bbrown/10 hover:backdrop-blur-md px-6 py-1"
       >
         Tour Dates
       </Link>
