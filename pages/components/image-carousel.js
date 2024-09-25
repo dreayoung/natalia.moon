@@ -41,7 +41,7 @@ const ImageCarousel = ({ images, speed = 50, direction = 'up' }) => {
   const renderImages = () => {
     // Duplicate the images array to create a seamless loop
     const duplicatedImages = [...images, ...images];
-    return duplicatedImages.map((src, index) => (
+    return duplicatedImages?.map((src, index) => (
       <div
         key={index}
         className="w-full h-72 md:w-1/3 flex-shrink-0 grayscale hover:grayscale-0"
