@@ -40,7 +40,11 @@ const ImageCarousel = ({ images, speed = 50, direction = 'up' }) => {
 
   const renderImages = () => {
     // Duplicate the images array to create a seamless loop
-    const duplicatedImages = images.reduce((res, current) => [...res, current, current], []);
+    // const duplicatedImages = images.reduce((res, current) => [...res, current, current], []);
+    const duplicatedOnce = images.concat(images);
+    // Duplicate twice
+    const duplicatedImages = duplicatedOnce.concat(duplicatedOnce);
+
     return duplicatedImages.map((src, index) => (
       <div
         key={index}
