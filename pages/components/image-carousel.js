@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import Image from 'next/image';
 
 const ImageCarousel = ({ images, speed = 50, direction = 'up' }) => {
   const containerRef = useRef(null);
@@ -45,10 +46,12 @@ const ImageCarousel = ({ images, speed = 50, direction = 'up' }) => {
         key={index}
         className="w-full h-72 md:w-1/3 flex-shrink-0 grayscale hover:grayscale-0"
       >
-        <img
+        <Image
           src={src}
           alt={`Slide ${index + 1}`}
-          className="w-full h-full object-cover object-bottom"
+          width={400}
+          height={400}
+          className="w-full h-full object-cover object-center md:object-bottom"
         />
       </div>
     ));
